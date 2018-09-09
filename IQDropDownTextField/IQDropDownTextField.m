@@ -946,7 +946,7 @@ NSInteger const IQOptionalTextFieldIndex =  -1;
                 NSDate *date = [[NSCalendar currentCalendar] dateFromComponents: componentsDay];
                 
                 super.text = selectedItem;
-                [self.timePicker setDate:date animated:animated];
+                //[self.timePicker setDate:date animated:animated];
                 
                 if (shouldNotifyDelegate && [self.delegate respondsToSelector:@selector(textField:didSelectDate:)])
                     [self.delegate textField:self didSelectDate:date];
